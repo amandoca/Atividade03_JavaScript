@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap');
+
+:root {
+--cor-fonte-principal: indianred;
+--cor-fonte-secundaria: firebrick;
+--cor-fundo-principal: navajowhite;
+--cor-fundo-secundaria: snow;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sirin Stencil', cursive;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--cor-fonte-principal);
+    background-color:  var(--cor-fundo-principal);
+}
+img {
+    width: 100%;
+}
+header {
+    top: 0;
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-fundo-secundaria);
+    z-index: 1;
+}
+main {
+    top: 4rem;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.container {
+    max-height: 200%;
+    width: 100%;
+    margin: 1rem auto;
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+    color: var(--cor-fonte-secundaria);
+    background-color: var(--cor-fundo-secundaria);
+}
+.superior, .inferior {
+    grid-template-columns: 1fr;
+}
+
+input, select, option {
+    color:inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    text-align: inherit;
+    margin: 5px;
+}
+#div_numeros, #div_calc{
+    margin: auto;
+    width: 30%;
+    display: grid;
+    gap: 0.5rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+#div_numeros {
+    grid-template-areas: "d  d  d"
+                        "n7 n8 n9"
+                        "n4 n5 n6"
+                        "n1 n2 n3"
+                        "n0 n0 n0";
+}
+#txt_display {
+    grid-area: d;
+    text-align: right;
+}
+#num_1 {
+    grid-area: n1;
+}
+#num_2 {
+    grid-area: n2;
+}
+#num_3 {
+    grid-area: n3;
+}
+#num_4 {
+    grid-area: n4;
+}
+#num_5 {
+    grid-area: n5;
+}
+#num_6 {
+    grid-area: n6;
+}
+#num_7 {
+    grid-area: n7;
+}
+#num_8 {
+    grid-area: n8;
+}
+#num_9 {
+    grid-area: n9;
+}
+#num_0 {
+    grid-area: n0;
+}
+.botoes, .bt_num, #bt_calcular, #bt_limpar {
+    cursor: pointer;
+    background:  linear-gradient(to bottom, lightpink, lightcoral, indianred);
+    border-radius: 10%;
+    color:mistyrose;
+}
+.botoes:hover, .bt_num:hover {
+    opacity: 0.7;
+}
+#div_calc {
+    grid-template-areas: "a b"
+                         "c d"
+                         "e e";
+}
+#bt_somar {
+    grid-area: a;
+}
+#bt_subtrair {
+    grid-area: b;
+}
+#bt_multiplicar {
+    grid-area: c;
+}
+#bt_calcular {
+    grid-area: d;
+}
+#bt_limpar {
+    grid-area: e;
+}
+#div_conf_poligono {
+    color: var(--cor-fonte-principal);
+}
+ #div_conf_poligono input  {
+    background-color:var(--cor-fundo-principal);
+    color:var(--cor-fonte-secundaria);   
+}
+#div_poligono {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    background-color: var(--cor-fundo-principal);
+    border: 2px dotted var(--cor-fonte-principal);
+    font-size: 0.75rem;
+}
+#p_perimetro {
+    margin-top: 10px;
+}
+#aumentar, #diminuir {
+    cursor: pointer;
+}
+#clipboard {
+    width: 100px;
+}
+
+@media (min-width: 768px) {
+    header {
+        font-size: 2rem;
+    }
+    main {
+        height:  calc(100% - 4rem);
+    }
+    .container {
+        height: 35%;
+        width: 90%;
+        margin: 2rem auto;
+    }
+    .superior ,.inferior {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #div_calc {
+        width: 40%;
+    }
+}
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatíble" content="IE=edge">
+			<title>Atividade JavaScript</title>
+			<link rel="stylesheet"
+			      type="text/css"
+			      href="Estilo/CSS.css"/>
+			<link rel="icon" href="Imagens/Javascript.png"/>
+				<meta name="viewport" content="width=device-width, initial-scale=1"/>
+			</head>
+			<body>
+				<header>Funcionalidades JavaScript</header>
+				<main>
+					<div class="container superior">
+						<div id="div_numeros">
+							<input type="text" id="txt_display" disabled name="text"/>
+							<span id="num_1" class="bt_num">1</span>
+							<span id="num_2" class="bt_num">2</span>
+							<span id="num_3" class="bt_num">3</span>
+							<span id="num_4" class="bt_num">4</span>
+							<span id="num_5" class="bt_num">5</span>
+							<span id="num_6" class="bt_num">6</span>
+							<span id="num_7" class="bt_num">7</span>
+							<span id="num_8" class="bt_num">8</span>
+							<span id="num_9" class="bt_num">9</span>
+							<span id="num_0" class="bt_num">0</span>
+						</div>
+						<div id="div_calc">
+							<img src="Imagens/Somar.png" id="bt_somar" class="botoes" data-oper="+" alt="Somar">
+								<img src="Imagens/Subtrair.png" id="bt_subtrair" class="botoes" data-oper="-" alt="Subtrair">
+									<img src="Imagens/Multiplicar.png" id="bt_multiplicar" class="botoes" data-oper="*" alt="Multiplicar">
+										<img src="Imagens/Calcular.png" alt="Calcular" id="bt_calcular">
+											<span id="bt_limpar">Limpar</span>
+										</div>
+										<div id="div_conf_poligono">
+										Dimensões:
+										</br>
+										Largura:
+										<input type="number" id="num_largura" min="50" max="100" value="50">px
+										</br>
+										Altura: 
+										<input type="number" id="num_altura" min="50" max="100" value="50">px
+										</div>
+										<div>
+											<div id="div_poligono"></div>
+											<!--*** VAZIO ***-->
+											<p id="p_perimetro"></p>
+											<!--*** VAZIO ***-->
+										</div>
+									</div>
+
+									<div class="container inferior">
+										<div>
+                                        Preencha 2 valores: 
+										</br>
+										Valor 1:
+										<input type="number" min="1" max="50" id="number1">
+										</br>
+										Valor 2:
+										<input type="number" min="1" max="50" id="number2">
+										</br>
+									</div>
+									<div>
+										<input type="button" value="Somar" id="somar">
+											<input type="button" value="Multiplicar" id="multiplicar">
+											</br>
+										</br>
+										Resultado: 
+										<input type="text" size="5" id="resultado" disabled/>
+									</div>
+									<div>
+										<p><Link><a id="aumentar">Aumentar</a></Link></p>
+										<p><Link><a id="diminuir">Diminuir</a></Link></p>
+									</div>
+									<div>
+                                        <img src="Imagens/clipboard.png" id="clipboard"/>
+									</div>
+								</main>
+                                <script src="Scripts/jscript.js"></script>
+							</body>
+						</html>
